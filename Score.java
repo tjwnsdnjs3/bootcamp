@@ -16,12 +16,15 @@ public class Score {
 		 * 학점은 90점 이상은 A 80 이상 B 나머진 F switch case로 작성
 		 * 
 		 */
+		//---------------------------------------------------------------------------------
+		//첫번째 방법
 		String skor="", seng="", smat="";
 		int ikor=0, ieng=0, imat=0;
 		while(true) {
 			skor = JOptionPane.showInputDialog("국어점수를 입력하세요(0~100):");
 			ikor = Integer.parseInt(skor);
 			if(ikor < 0 || ikor > 100) {
+		JOptionPane.showMessageDialog(null, "잘못된 입력입니다. 다시 입력하세요.");
 				continue;
 			}else {
 				break;
@@ -31,6 +34,7 @@ public class Score {
 			seng = JOptionPane.showInputDialog("영어점수를 입력하세요(0~100):");
 			ieng = Integer.parseInt(seng);
 			if(ieng < 0 || ieng > 100) {
+				JOptionPane.showMessageDialog(null, "잘못된 입력입니다. 다시 입력하세요.");
 				continue;
 			}else {
 				break;
@@ -40,6 +44,7 @@ public class Score {
 			smat = JOptionPane.showInputDialog("수학점수를 입력하세요(0~100):");
 			imat = Integer.parseInt(smat);
 			if(imat < 0 || imat > 100) {
+				JOptionPane.showMessageDialog(null, "잘못된 입력입니다. 다시 입력하세요.");
 				continue;
 			}else {
 				break;
@@ -55,7 +60,32 @@ public class Score {
             total += subject[i];
         }
         double avg = (double)total / subject.length;
-       
+		//---------------------------------------------------------------------------------
+		//두번째 방법
+//        String[] subjects = {"국어", "영어", "수학"};
+//        int[] scores = new int[subjects.length];
+//
+//
+//        for (int i = 0; i < subjects.length; i++) {
+//            while (true) {
+//                String input = JOptionPane.showInputDialog(
+//                    subjects[i] + " 점수를 입력하세요 (0~100):"
+//                );
+//                int score = Integer.parseInt(input);
+//                if (score >= 0 && score <= 100) {
+//                    scores[i] = score;
+//                    break;
+//                } else {
+//                    JOptionPane.showMessageDialog(null, "잘못된 입력입니다. 다시 입력하세요.");
+//                }
+//            }
+//        }
+//        int total = 0;
+//        for (int s : scores) {
+//            total += s;
+//        }
+//        double avg = (double) total / scores.length;
+        //---------------------------------------------------------------------------------
         char grade;
         switch((int)avg/10) {
             case 10: 
