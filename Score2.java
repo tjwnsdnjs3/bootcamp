@@ -21,7 +21,7 @@ public class Score2 {
                   subjects[i][0] + " 점수를 입력하세요 (0~100):"
               );
               int score = Integer.parseInt(input);
-              if (score >= 0 || score <= 100) {
+              if (score >= 0 && score <= 100) {
                   subjects[i][1] = input; 
                   scores[i] = score;     
                   break;
