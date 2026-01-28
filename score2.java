@@ -6,7 +6,7 @@ public class score2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+    
       String[][] subjects = {
     		  {"국어", ""},
     		  {"영어", ""},
@@ -49,6 +49,7 @@ public class score2 {
           default:
               grade = 'F';
       }
+      
       System.out.printf("총점: %d, 평균: %.2f, 학점: %c\n", total, avg, grade);
 	}
 
