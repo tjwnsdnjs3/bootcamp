@@ -35,25 +35,54 @@ public class Gawibawibo {
 		
 		while(true) {
 			String input = JOptionPane.showInputDialog("게임을 시작함(1:보자기 2:바위 3:가위)");
-			b = "1";
-			m = "2";
-			j = "3";
-			if("1".equals(input) || "보".equals(input)) {
-				go = 1;
-				System.out.println("사용자: 보자기");
+//			b = "1";
+//			m = "2";
+//			j = "3";
+			try {
+				go = Integer.parseInt(input);
+				if(go == 1) System.out.println("사용자: 보자기");
+			    else if(go == 2) System.out.println("사용자: 바위");
+			    else if(go == 3) System.out.println("사용자: 가위");
+			    else go = 4;
+			} catch (Exception e) {
+				// TODO: handle exception
+				switch (input) {
+				case "보자기":
+					go = 1;
+					System.out.println("사용자: 보자기");
+					break;
+				case "바위":
+					go = 2;
+					System.out.println("사용자: 바위");
+					break;
+				case "가위":
+					go = 3;
+					System.out.println("사용자: 가위");
+					break;
+				default :
+					go = 4;
+ 				}
 			}
-			else if("2".equals(input) || "바위".equals(input)) {
-				go = 2;
-				System.out.println("사용자: 바위");
-			}
-			else if("3".equals(input) || "가위".equals(input)) {
-				go = 3;
-				System.out.println("사용자: 가위");
-			}
-			else {
-				System.out.println("제대로된 값을 입력하세요.");
+			if(go == 4) {
+				System.out.println("제대로된 값을 입력하세요.");	
 				continue;
 			}
+//			if("1".equals(input) || "보".equals(input)) {
+//				go = 1;
+//				System.out.println("사용자: 보자기");
+//			}
+//			else if("2".equals(input) || "바위".equals(input)) {
+//				go = 2;
+//				System.out.println("사용자: 바위");
+//			}
+//			else if("3".equals(input) || "가위".equals(input)) {
+//				go = 3;
+//				System.out.println("사용자: 가위");
+//			}
+//			else {
+//				System.out.println("제대로된 값을 입력하세요.");
+//				continue;
+//			}
 			int random = (int)(Math.random()*3)+1;
 			if(random == 1) {
 				System.out.println("컴퓨터: 보자기");
