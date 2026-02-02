@@ -8,7 +8,7 @@ import java.util.List;
 /*
  * ArrayList: 컬렉션의 대표적인 클래스, 같은 타입의 객체를 배열처럼 관리하는 자료구조임
  */
-public class ListExam {
+public class ListEx {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

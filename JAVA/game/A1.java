@@ -1,5 +1,5 @@
 package javaFund.game;
 
-public class A {
+public class A1 {
 
 }
