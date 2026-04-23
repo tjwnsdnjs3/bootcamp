@@ -1,51 +1,35 @@
-# 프로젝트명
+1. 프로젝트 제목
+- First Road
 
-<div align="center">
-  <img src="여기에_로고_이미지_URL" width="300" alt="프로젝트 로고" />
-  <br />
-  <br />
-  <a href="여기에_배포주소">배포 링크</a>
-</div>
+2. 프로젝트 로고
+- 이미지 주소(URL): https://...
 
-<br />
+3. 프로젝트 GitHub Repository 주소
+- https://github.com/...
 
-## 📌 프로젝트 소개
+4. 프로젝트 정보
+- 개발 기간: 2025.03 ~ 2025.06
+- 개발 인원: 4명
+- 사용 기술: Spring Boot, React, MariaDB
+- 프로젝트 한 줄 소개: 화물운송 중개 플랫폼
 
-- 프로젝트명: 프로젝트명
-- 개발 기간: 2026.04.01 ~ 2026.05.30
-- 프로젝트 유형: Backend Project
-- 목표: 프로젝트의 목적을 2~3줄로 작성
+5. 팀 소개
+- 홍길동 / 백엔드 / https://github.com/...
+- 김철수 / 프론트엔드 / https://github.com/...
 
-예시)
+6. 프로젝트 소개
+- 화주와 운송사를 연결하는 화물운송 중개 플랫폼입니다.
 
-이 프로젝트는 화물 운송 중개 서비스를 위한 백엔드 서버입니다.  
-회원 관리, 인증/인가, 화물 등록, 입찰, 배송 관리 등의 기능을 제공합니다.  
-Spring Boot 기반 REST API 서버로 설계하였으며, React 프론트엔드와 연동됩니다.
+7. 배포 주소
+- https://...
 
----
+8. 화면구성 이미지
+- 메인 화면 이미지: https://...
+- 로그인 화면 이미지: https://...
 
-## 👥 팀원 소개
-
-| 이름 | 역할 | GitHub |
-|------|------|--------|
-| 홍길동 | Backend / API 설계 / DB 설계 | [github](https://github.com/yourid) |
-| 김철수 | Backend / 인증인가 / 배포 | [github](https://github.com/yourid2) |
-
----
-
-## 🛠 시작 가이드
-
-### Requirements
-
-- Java 21
-- Gradle 8.x
-- Spring Boot 3.x 또는 4.x
-- MariaDB 10.x
-- IntelliJ 또는 STS
-- Git
-
-### Installation
-
-```bash
-git clone https://github.com/username/repository-name.git
-cd repository-name
+9. 주요 기능 소개
+- 회원가입 및 로그인
+- 화물 등록
+- 입찰 등록
+- 배송 조회
+- 문의 게시판
