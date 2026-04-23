@@ -1,8 +1,12 @@
 1. 프로젝트 제목
 - First Road
 
-2. 프로젝트 로고
-- 이미지 주소(URL): https://...
+<div align="center">
+  <img src="여기에_로고_이미지_URL" width="300" alt="프로젝트 로고" />
+  <br />
+  <br />
+  <a href="여기에_배포주소">배포 링크</a>
+</div>
 
 3. 프로젝트 GitHub Repository 주소
 - https://github.com/...
